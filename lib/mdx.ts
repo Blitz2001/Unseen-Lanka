@@ -79,7 +79,29 @@ export async function getTransfer(slug: string) {
     return { slug, content, frontmatter };
 }
 
-export function getAllSlugs(dir: 'journeys' | 'destinations' | 'transfers') {
+export type GuideFrontmatter = {
+    title: string;
+    seoTitle: string;
+    description: string;
+    category: string;
+    publishedAt: string;
+    images?: string[];
+};
+
+export async function getGuide(slug: string) {
+    const filePath = path.join(rootDirectory, 'guides', `${slug}.mdx`);
+    const source = fs.readFileSync(filePath, 'utf8');
+
+    const { content, frontmatter } = await compileMDX<GuideFrontmatter>({
+        source,
+        components,
+        options: { parseFrontmatter: true },
+    });
+
+    return { slug, content, frontmatter };
+}
+
+export function getAllSlugs(dir: 'journeys' | 'destinations' | 'transfers' | 'guides') {
     const contentDir = path.join(rootDirectory, dir);
     if (!fs.existsSync(contentDir)) return [];
 
