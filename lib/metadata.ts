@@ -61,11 +61,11 @@ export function constructMetadata({
             default: title,
             template: '%s | Unseen Lanka',
         } : defaultMetadata.title,
-        description: description || defaultMetadata.description,
+        description: description || (defaultMetadata.description as string),
         openGraph: {
             ...defaultMetadata.openGraph,
-            title: title || defaultMetadata.openGraph?.title,
-            description: description || defaultMetadata.description,
+            title: title || (defaultMetadata.openGraph?.title as string),
+            description: description || (defaultMetadata.description as string),
             images: [
                 {
                     url: image,
@@ -76,8 +76,8 @@ export function constructMetadata({
         },
         twitter: {
             ...defaultMetadata.twitter,
-            title: title || defaultMetadata.twitter?.title,
-            description: description || defaultMetadata.description,
+            title: title || (defaultMetadata.twitter?.title as string),
+            description: description || (defaultMetadata.description as string),
             images: [image],
         },
         ...(noIndex && {
