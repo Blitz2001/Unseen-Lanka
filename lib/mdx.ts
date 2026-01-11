@@ -57,7 +57,29 @@ export async function getDestination(slug: string) {
     return { slug, content, frontmatter };
 }
 
-export function getAllSlugs(dir: 'journeys' | 'destinations') {
+export type TransferFrontmatter = {
+    title: string;
+    seoTitle: string;
+    description: string;
+    price?: string;
+    features?: string[];
+    images?: string[];
+};
+
+export async function getTransfer(slug: string) {
+    const filePath = path.join(rootDirectory, 'transfers', `${slug}.mdx`);
+    const source = fs.readFileSync(filePath, 'utf8');
+
+    const { content, frontmatter } = await compileMDX<TransferFrontmatter>({
+        source,
+        components,
+        options: { parseFrontmatter: true },
+    });
+
+    return { slug, content, frontmatter };
+}
+
+export function getAllSlugs(dir: 'journeys' | 'destinations' | 'transfers') {
     const contentDir = path.join(rootDirectory, dir);
     if (!fs.existsSync(contentDir)) return [];
 
