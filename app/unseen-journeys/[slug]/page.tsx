@@ -8,9 +8,10 @@ export async function generateStaticParams() {
     return slugs.map((slug) => ({ slug }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
     try {
-        const { frontmatter } = await getJourney(params.slug);
+        const { frontmatter } = await getJourney(slug);
         return constructMetadata({
             title: frontmatter.seoTitle || frontmatter.title,
             description: frontmatter.description,
@@ -21,9 +22,10 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     }
 }
 
-export default async function JourneyPage({ params }: { params: { slug: string } }) {
+export default async function JourneyPage({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
     try {
-        const { content, frontmatter } = await getJourney(params.slug);
+        const { content, frontmatter } = await getJourney(slug);
 
         return (
             <article className="min-h-screen">
@@ -80,7 +82,7 @@ export default async function JourneyPage({ params }: { params: { slug: string }
                             </div>
 
                             <Link
-                                href={`/plan-your-trip?journey=${params.slug}`}
+                                href={`/plan-your-trip?journey=${slug}`}
                                 className="block w-full bg-stone-900 text-white text-center py-4 rounded-lg font-medium hover:bg-black transition-colors"
                             >
                                 Request This Journey

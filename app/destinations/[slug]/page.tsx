@@ -8,9 +8,10 @@ export async function generateStaticParams() {
     return slugs.map((slug) => ({ slug }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
     try {
-        const { frontmatter } = await getDestination(params.slug);
+        const { frontmatter } = await getDestination(slug);
         return constructMetadata({
             title: frontmatter.seoTitle || frontmatter.title,
             description: frontmatter.description,
@@ -21,9 +22,10 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     }
 }
 
-export default async function DestinationPage({ params }: { params: { slug: string } }) {
+export default async function DestinationPage({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
     try {
-        const { content, frontmatter } = await getDestination(params.slug);
+        const { content, frontmatter } = await getDestination(slug);
 
         return (
             <article className="min-h-screen">
