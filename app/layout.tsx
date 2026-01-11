@@ -3,6 +3,8 @@ import { Inter, Outfit } from 'next/font/google';
 import './globals.css';
 import { defaultMetadata } from '@/lib/metadata';
 import OrganizationSchema from '@/components/schema-org';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -29,7 +31,11 @@ export default function RootLayout({
         <OrganizationSchema />
       </head>
       <body className="font-sans antialiased text-gray-900 bg-white min-h-screen flex flex-col">
-        {children}
+        <Navbar />
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
