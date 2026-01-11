@@ -29,7 +29,7 @@ export default function ContactPage() {
                         <h3 className="text-xl font-bold mb-6">Office Info</h3>
                         <div className="space-y-4 text-stone-600">
                             <p>
-                                <strong>Avawia Tours (Pvt) Ltd</strong><br />
+                                <strong>Unseen Lanka</strong><br />
                                 123, Galle Road,<br />
                                 Colombo 03, Sri Lanka.
                             </p>

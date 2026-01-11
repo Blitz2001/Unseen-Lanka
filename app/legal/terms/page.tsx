@@ -18,7 +18,7 @@ export default function TermsPage() {
             <p>Cancellations made more than 30 days before arrival: Deposit is forfeited, but balance is fully refundable. Cancellations within 30 days are subject to varying charges depending on hotel policies.</p>
 
             <h3>3. Liability</h3>
-            <p>Avawia Tours acts as an agent. We are not liable for delays, accidents, or disruptions caused by third parties, weather, or force majeure.</p>
+            <p>Unseen Lanka acts as an agent. We are not liable for delays, accidents, or disruptions caused by third parties, weather, or force majeure.</p>
         </div>
     );
 }

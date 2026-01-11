@@ -19,7 +19,7 @@ export default function AboutPage() {
 
                     <h2>Who We Are</h2>
                     <p>
-                        We are <strong>Avawia Tours</strong>, a registered Destination Management Company (SLTDA Reg No: SLTDA/SQ/2026/001).
+                        We are **Unseen Lanka**, a registered Destination Management Company (SLTDA Reg No: SLTDA/SQ/2026/001).
                         But to our travelers, we are Unseen Lanka.
                     </p>
                     <p>

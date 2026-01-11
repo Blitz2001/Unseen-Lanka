@@ -51,7 +51,7 @@ export default function Footer() {
             </div>
 
             <div className="container mx-auto px-4 mt-12 pt-8 border-t border-stone-900 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p>&copy; {new Date().getFullYear()} Avawia Tours (Pvt) Ltd. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Unseen Lanka. All rights reserved.</p>
                 <p>Operating as Unseen Lanka.</p>
             </div>
         </footer>

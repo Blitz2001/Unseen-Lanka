@@ -3,7 +3,7 @@ export default function OrganizationSchema() {
         '@context': 'https://schema.org',
         '@type': 'TravelAgency',
         name: 'Unseen Lanka',
-        alternateName: 'Avawia Tours',
+
         url: 'https://www.unseenlanka.com',
         logo: 'https://www.unseenlanka.com/logo.png',
         description: 'Experience Architect for Untrending Sri Lanka.',

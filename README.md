@@ -4,7 +4,7 @@
 **DO NOT DEVIATE FROM THIS SCOPE.**
 
 ### 1. Product Identity
-- **Brand**: Unseen Lanka (by Avawia Tours)
+- **Brand**: Unseen Lanka
 - **Positioning**: Mid-Luxury Experience Architect for "Untrending" Sri Lanka.
 - **Goal**: High SEO, Decision-Free Conversion, Manual Ops First.
 
