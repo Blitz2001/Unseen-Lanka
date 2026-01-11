@@ -5,6 +5,7 @@ import { defaultMetadata } from '@/lib/metadata';
 import OrganizationSchema from '@/components/schema-org';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Analytics from '@/components/Analytics';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -36,6 +37,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
