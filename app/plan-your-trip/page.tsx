@@ -7,7 +7,7 @@ export const metadata = constructMetadata({
 });
 
 export default async function PlanYourTripPage({ searchParams }: { searchParams: Promise<{ journey?: string; service?: string }> }) {
-    // Can use searchParams to pre-fill form if we want to add that logic later
+    // Can use searchParams to pre-fill form if we want to add that logic later 
     const resolvedParams = await searchParams;
 
     return (
