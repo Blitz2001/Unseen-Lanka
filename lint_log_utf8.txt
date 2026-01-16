@@ -1,0 +1,58 @@
+﻿
+> unseen_lanka@0.1.0 lint
+> eslint
+
+
+F:\unseen_lanka\app\about-unseen-lanka\page.tsx
+  16:103  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  17:70   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  17:91   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  26:31   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  26:39   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  26:48   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  31:82   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  31:89   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  35:76   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+F:\unseen_lanka\app\actions.ts
+  3:10  warning  'redirect' is defined but never used  @typescript-eslint/no-unused-vars
+
+F:\unseen_lanka\app\destinations\[slug]\page.tsx
+  67:14  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+F:\unseen_lanka\app\guides\[slug]\page.tsx
+   5:8   warning  'Image' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+  55:33  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  70:36  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  83:14  warning  'error' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+
+F:\unseen_lanka\app\layout.tsx
+  7:8  warning  'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+  8:8  warning  'Analytics' is defined but never used  @typescript-eslint/no-unused-vars
+
+F:\unseen_lanka\app\plan-your-trip\page.tsx
+  22:49  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+F:\unseen_lanka\app\transfers\[slug]\page.tsx
+  80:14  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+F:\unseen_lanka\app\unseen-journeys\[slug]\page.tsx
+  96:14  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+F:\unseen_lanka\app\unseen-journeys\page.tsx
+  40:37  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+F:\unseen_lanka\components\editorial\FeatureGrid.tsx
+  3:10  warning  'motion' is defined but never used             @typescript-eslint/no-unused-vars
+  5:8   warning  'Image' is defined but never used              @typescript-eslint/no-unused-vars
+  8:7   warning  'features' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+F:\unseen_lanka\components\editorial\HeroSection.tsx
+  13:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+F:\unseen_lanka\components\home\SocialProof.tsx
+  41:71  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  41:85  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+Γ£û 27 problems (13 errors, 14 warnings)
+

@@ -3,10 +3,51 @@
 @theme {
   --font-inter: var(--font-inter);
   --font-outfit: var(--font-outfit);
+  --font-playfair: 'Playfair Display', serif;
+
+  --color-editorial-cream: #F5F2EA;
+  --color-editorial-text: #2C2C2C;
+  --color-editorial-accent: #6C584C;
 }
 
 @layer base {
   body {
-    @apply antialiased text-gray-900 bg-white font-sans;
+    @apply antialiased text-editorial-text bg-editorial-cream font-sans;
+  }
+
+  /* Smooth scrolling for the whole document */
+  html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    @apply overflow-y-scroll;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-playfair font-normal;
+    /* Editorial often uses lighter weights for huge text */
+  }
+}
+
+@layer utilities {
+  .snap-y-mandatory {
+    scroll-snap-type: y mandatory;
+  }
+
+  .snap-always {
+    scroll-snap-stop: always;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }

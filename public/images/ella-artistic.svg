@@ -1,0 +1,14 @@
+<svg width="800" height="1200" viewBox="0 0 800 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="800" height="1200" fill="#E8F5E9"/>
+<path d="M-100 1200 C 200 800, 600 800, 900 1200 Z" fill="#2E7D32"/>
+<path d="M100 1200 C 300 900, 700 900, 900 1200 Z" fill="#1B5E20" fill-opacity="0.8"/>
+<rect x="200" y="600" width="400" height="20" rx="10" fill="#3E2723"/>
+<rect x="250" y="620" width="20" height="200" fill="#5D4037"/>
+<rect x="530" y="620" width="20" height="200" fill="#5D4037"/>
+<rect width="800" height="1200" fill="url(#grain3)" fill-opacity="0.1"/>
+<defs>
+<filter id="grain3">
+<feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" stitchTiles="stitch"/>
+</filter>
+</defs>
+</svg>

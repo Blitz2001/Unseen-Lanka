@@ -1,23 +1,20 @@
-import Hero from '@/components/home/Hero';
-import TrustStack from '@/components/home/TrustStack';
-import SignatureJourneys from '@/components/home/SignatureJourneys';
-import TravelStyles from '@/components/home/TravelStyles';
-import DestinationsGrid from '@/components/home/DestinationsGrid';
-import SocialProof from '@/components/home/SocialProof';
-import HowItWorks from '@/components/home/HowItWorks';
-import CTASection from '@/components/home/CTASection';
+import HeroSection from '@/components/editorial/HeroSection';
+import FeatureGrid from '@/components/editorial/FeatureGrid';
+import SignatureJourneysEditorial from '@/components/editorial/SignatureJourneysEditorial';
+import Footer from '@/components/Footer';
+import SnapSection from '@/components/ui/SnapSection';
 
 export default function Home() {
   return (
-    <>
-      <Hero />
-      <TrustStack />
-      <SignatureJourneys />
-      <TravelStyles />
-      <DestinationsGrid />
-      <SocialProof />
-      <HowItWorks />
-      <CTASection />
-    </>
+    <main id="root-scroll-container" className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+      <HeroSection />
+      <FeatureGrid />
+      <SignatureJourneysEditorial />
+
+      {/* Footer as a full-screen snap section for a clean finish */}
+      <SnapSection className="min-h-screen bg-stone-950 text-editorial-cream flex flex-col justify-center">
+        <Footer />
+      </SnapSection>
+    </main>
   );
 }

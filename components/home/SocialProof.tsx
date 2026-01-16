@@ -38,7 +38,7 @@ export default function SocialProof() {
                                     <span key={i}>★</span>
                                 ))}
                             </div>
-                            <p className="text-stone-700 italic mb-6">"{review.text}"</p>
+                            <p className="text-stone-700 italic mb-6">&quot;{review.text}&quot;</p>
                             <div>
                                 <p className="font-bold text-stone-900">{review.name}</p>
                                 <p className="text-xs text-stone-500 uppercase tracking-widest">{review.country}</p>

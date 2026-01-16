@@ -4,21 +4,21 @@ const JOURNEYS = [
     {
         title: "The Northern Frontiers",
         desc: "Explore Sri Lanka's least-visited cultural region with expert guides. Jaffna to Trincomalee.",
-        image: "https://images.unsplash.com/photo-1546708773-e5746a55bfb0?q=80&w=2070&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1588258524675-c603095bb78b?q=80&w=2070&auto=format&fit=crop",
         link: "/unseen-journeys/northern-frontiers",
         tag: "Signature"
     },
     {
         title: "Southern Soul",
         desc: "Surf culture, hidden cafes, and slow travel along the iconic southern belt.",
-        image: "https://images.unsplash.com/photo-1577948000111-9c9707350006?q=80&w=2070&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1544778328-3e4b3e5e6e8e?q=80&w=2070&auto=format&fit=crop",
         link: "/unseen-journeys/southern-soul",
         tag: "Best Seller"
     },
     {
         title: "Decision-Free Family",
         desc: "A logistics-perfected itinerary designed for parents who need a real break.",
-        image: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=2000&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1580910540638-3165b67af291?q=80&w=2070&auto=format&fit=crop",
         link: "/unseen-journeys/decision-free-family",
         tag: "Family Focus"
     }

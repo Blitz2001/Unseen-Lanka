@@ -2,7 +2,7 @@ import { getGuide, getAllSlugs } from '@/lib/mdx';
 import { notFound } from 'next/navigation';
 import { constructMetadata } from '@/lib/metadata';
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image'; // Unused
 
 export async function generateStaticParams() {
     const slugs = getAllSlugs('guides');
@@ -67,7 +67,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                         <div className="bg-stone-900 text-stone-100 p-6 rounded-xl text-center">
                             <h3 className="text-lg font-bold mb-3 text-white">Need a Driver?</h3>
                             <p className="text-sm text-stone-400 mb-6">
-                                Don't risk public transport. Hire a vetted chauffeur-guide.
+                                Don&apos;t risk public transport. Hire a vetted chauffeur-guide.
                             </p>
                             <Link
                                 href="/transfers/private-driver-sri-lanka"

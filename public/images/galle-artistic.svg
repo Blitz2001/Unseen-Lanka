@@ -1,0 +1,12 @@
+<svg width="800" height="1200" viewBox="0 0 800 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="800" height="1200" fill="#E0F2F1"/>
+<path d="M0 800C300 750 500 850 800 800V1200H0V800Z" fill="#0277BD" fill-opacity="0.8"/>
+<path d="M500 400h100v400H500z" fill="#F5F5F5"/>
+<path d="M480 400h140l-70-100z" fill="#D32F2F"/>
+<rect width="800" height="1200" fill="url(#grain2)" fill-opacity="0.1"/>
+<defs>
+<filter id="grain2">
+<feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+</filter>
+</defs>
+</svg>

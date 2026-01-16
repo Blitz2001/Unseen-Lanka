@@ -43,9 +43,9 @@ export default function Footer() {
                     <p className="mb-2"><a href="mailto:hello@unseenlanka.com" className="hover:text-white">hello@unseenlanka.com</a></p>
                     <p className="mb-6"><a href="tel:+94770000000" className="hover:text-white">+94 77 000 0000</a></p>
 
-                    <div className="border border-stone-800 rounded p-4 inline-block">
-                        <p className="text-xs text-stone-600 uppercase tracking-widest mb-1">SLTDA Registered</p>
-                        <p className="text-white font-mono">SLTDA/SQ/2026/001</p>
+                    <div className="border border-stone-800 rounded p-4 inline-block bg-white/5">
+                        <p className="text-[10px] text-stone-500 uppercase tracking-[0.2em] mb-2 font-bold">SLTDA Registered</p>
+                        <p className="text-stone-300 font-sans text-sm tracking-wider whitespace-nowrap">SLTDA/SQ/2026/001</p>
                     </div>
                 </div>
             </div>
